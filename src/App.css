@@ -1,5 +1,8 @@
 .App {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  display: block;
 }
 
 .App-logo {
@@ -19,7 +22,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +38,297 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: hsl(248, 29%, 11%);
+  word-break: normal;
+}
+
+.App {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.App header {
+  background-color: hsl(245, 27%, 9%);
+  box-shadow: 0px 0px 20px #FFD500;
+  min-height: 100px;
+  color: white;
+  font-weight: bolder;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  z-index: 99;
+  box-sizing: border-box;
+  border-bottom: solid #FFE986;
+  vertical-align: bottom;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 100%;
+  overflow-y: scroll;
+  /* display: flex; */
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #1D1D1D;
+}
+
+form {
+  background-color: hsl(248, 29%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+  max-height: 500px;
+}
+
+form button {
+  background-color: #ffde38;
+  box-shadow: 0px 0px 20px #FFD500;
+  color: white;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+
+input {
+  padding: 10px 10px 10px 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 20px #ccc;
+
+  border-radius: 20px;
+  flex: 1;
+  margin-right: 5px;
+  margin-left: 20px;
+
+}
+
+::placeholder {
+  margin-left: 100px;
+}
+
+button {
+  background: #938021;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+button:disabled {
+  background: #ffde38;
+  box-shadow: 0px 0px 20px #FFD500;
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+
+.sign-out {
+  color: white;
+  font-size: 1rem;
+  background: #282c34;
+  margin-left: auto;
+  margin-right: 20px;
+  min-width: 80px;
+  max-height: 40px;
+  border-radius: 0px;
+  margin-top: 25px;
+  padding: 10px 20px;
+}
+
+
+h1 {
+  position: relative;
+  padding-top: 50px;
+  margin-left: 2.5%;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+ul, li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  font-weight: 400;
+  margin: 0px 0px 0px 0px;
+
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  word-break: normal; 
+}
+
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: #1D1D1D;
+  align-self: flex-end;
+}
+.received p {
+  color: #1D1D1D;
+}
+
+.received .message-wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px #FFFFFF;
+
+}
+
+.message-wrapper {
+  box-shadow: 0px 0px 20px #FFD500;
+  background: #ffde38;
+  max-width: 250px;
+  min-height: 5px;
+  padding: 15px 15px;
+  margin: 10px 10px;
+  border-radius: 25px;
+  word-break: normal; 
+}
+
+.song-cover {
+  margin: 0px 0px;
+  margin: 5px 5px 5px 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.song-text {
+  text-align: left;
+  font-size: 3rem;
+  line-height: 35px;
+  height: min-content;
+  font-weight: 800;
+  margin: 5px 10px;
+  padding: 0px 0px;
+  word-break: keep-all;
+}
+
+.artist-text {
+  text-align: left;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 10px;
+  font-weight: 400;
+}
+
+.profile-picture {
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+.glyphicon {
+  margin-top: 2.5px;
+  font-size: 2rem;
+  color: #1D1D1D;
+  margin-bottom: 2.5px;
+  margin-left: 5px;
+  margin-right: 10px;
+
+  font-size: 2rem;
+  color: #1D1D1D;
+}
+
+.fa {
+  font-size: 2rem;
+  color: white;
+}
+
+.logo {
+  width: auto;
+  height: 100px;
+  margin-top: 0px;
+  margin-left: 25px;
+
+}
+
+.song-cover:hover {
+  filter: grayscale(100%);
+}
+
+.login {
+  flex-direction: column-reverse;
+}
+
+.email-label {
+  width: 100%;
+  color: white;
+}
+
+.pw-label {
+  width: 100%;
+  color: white;
+}
+
+.email {
+  width: 30%;
+  margin: 10px;
+}
+
+.pw {
+  width: 30%;
+  margin: 10px;
+}
+
+.sign-in {
+  color: #282c34;
+  background: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 10px 20px;
 }
